@@ -14,7 +14,7 @@ from insightface.app import FaceAnalysis
 from .pipeline_stable_diffusion_xl_instantid_inpaint import StableDiffusionXLInstantIDInpaintPipeline, draw_kps
 
 folder_paths.folder_names_and_paths["ipadapter"] = ([os.path.join(folder_paths.models_dir, "ipadapter")], folder_paths.supported_pt_extensions)
-INSIGHTFACE_PATH = os.path.join(folder_paths.models_dir, "insightface")
+INSIGHTFACE_PATH = "/mnt/private/models/insightface"
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
