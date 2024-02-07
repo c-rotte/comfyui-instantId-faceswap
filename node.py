@@ -145,7 +145,7 @@ class SetupPipeline:
         return {
             "required": {
                 "checkpoint": (folder_paths.get_filename_list("checkpoints"),),
-                "controlnet": (folder_paths.get_folder_paths("controlnet"),),
+                "controlnet": ("STRING", {"multiline": False, "forceInput": False, "default": "/mnt/private/models/controlnet"}),
                 "controlnet_name": ("STRING", {"multiline": False, "forceInput": False, "default": "/ControlNetModel"}),
                 "ipadapter":  (folder_paths.get_filename_list("ipadapter"),),
             },
